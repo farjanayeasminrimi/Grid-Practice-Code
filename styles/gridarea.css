@@ -1,0 +1,35 @@
+
+.header, nav, .main_area, .side-bar, .advertising-bar, footer{
+  border: 2px solid orange;
+  border-radius: 7px;
+    text-align: center;
+    padding: 50px 20px;
+}
+.header{
+  grid-area: header;
+}
+nav{
+  grid-area: navbar;
+}
+.main_area{
+  grid-area: main;
+}
+.side-bar{
+  grid-area: sidebar;
+}
+.advertising-bar{
+  grid-area: advertising;
+}
+footer{
+  grid-area: footer;
+}
+body{
+  background-color: blanchedalmond;
+
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header header header header header"
+  "navbar main main main sidebar"
+  "navbar main main main advertising"
+  "footer footer footer footer footer";
+}
